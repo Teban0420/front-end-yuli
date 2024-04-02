@@ -86,47 +86,39 @@ export const Formulario = () => {
         
     }
 
-//    const validarUsuario = () => {
-
-//         const { propietario,                
-//                 reacciones_alergias,
-//                 nombre,
-//                 celular,
-//                 direccion,
-//                 zipcode,                
-//                 // agua_hogar,
-//                 Agua_provenienteId,
-//                 casado,
-//                 edad,
-//                 Personas_hogarId,} = usuario;
-    
-//         let valido = !propietario.length || !reacciones_alergias.length || !nombre.length || !celular.length ||
-//                     !direccion.length || !zipcode.length  || !Agua_provenienteId.length ||
-//                     !casado.length || !edad.length || !Personas_hogarId.length
-//         return valido;
-//     }
-
    const agregar = async (e) => {
-        e.preventDefault();        
-
-        // const respuesta = await adminAxios.post('/new_reserve', reserve);    
-        const respuesta = await adminAxios.post('/new_reserve', reserve);   
+        e.preventDefault();   
         
-        if(respuesta.status == 200){
+        try {
+
+            const respuesta = await adminAxios.post('/new_reserve', reserve);               
+        
+            if(respuesta.status == 200){
+
+                Swal.fire({
+                    type: 'success',
+                    icon: 'success',
+                    title: 'Gracias por contactarse con nosotros',                
+                })
+
+                setTimeout(() => {
+                    
+                    window.location.href = window.location.href;
+                }, 3000);
+
+            }
+            
+        } catch (error) {
 
             Swal.fire({
-                type: 'success',
-                icon: 'success',
-                title: 'Gracias por contactarse con nosotros',                
+                type: 'error',
+                icon: 'error',
+                title: 'Something Wrong',                
             })
-
-            setTimeout(() => {
-                
-                window.location.href = window.location.href;
-            }, 3000);
-
         }
-   }
+ 
+    }
+   
 
     return(
         <>
