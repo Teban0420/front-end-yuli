@@ -119,7 +119,7 @@ export const Formulario = () => {
  
     }
    
-
+ 
     return(
         <>
             <form onSubmit={agregar} > 
