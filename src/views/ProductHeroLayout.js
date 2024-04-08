@@ -1,4 +1,3 @@
-import * as React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
@@ -10,8 +9,9 @@ const ProductHeroLayoutRoot = styled('section')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   [theme.breakpoints.up('sm')]: {
-    height: '100vh',
+    height: '70vh',
     minHeight: 500,
+    maxHeight: 1300,
   },
 }));
 
@@ -21,9 +21,9 @@ const Background = styled('div')({
   right: 0,
   top: 0,
   bottom: 0,
-  backgroundSize: 'cover',
+  backgroundSize: '45%', 
   backgroundRepeat: 'no-repeat',
-  zIndex: -1,
+  zIndex: -2,
 });
 
 function ProductHeroLayout(props) {
@@ -35,12 +35,13 @@ function ProductHeroLayout(props) {
       <Container
         sx={{
           mt: 3,
-          mb: -1,
+          mb: 14,
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
+          alignItems: 'center',          
         }}
-      >        
+      >   
+ 
         {children}
 
         <Box
@@ -50,7 +51,7 @@ function ProductHeroLayout(props) {
             right: 0,
             top: 0,
             bottom: 0,
-            // zIndex: -1,
+            zIndex: -1,
           }}
         />
 
