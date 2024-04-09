@@ -1,17 +1,14 @@
-import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import Button from '../components/Button';
 
-function ProductCTA() {  
-
-  const navigate = useNavigate();
+function ProductCTA() {   
  
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate('/form');   
+     console.log('enviando')
     
   };
 
@@ -31,7 +28,7 @@ function ProductCTA() {
             <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }}>
               
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+                Current Offers
               </Typography>
 
               <Typography variant="h5" >
@@ -46,6 +43,7 @@ function ProductCTA() {
               >
                 Keep me updated
               </Button>
+              
             </Box>
           </Box>
         </Grid>

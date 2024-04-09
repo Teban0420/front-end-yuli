@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
@@ -26,6 +24,7 @@ const image = {
 };
 
 function ProductHowItWorks() {
+
   return (
     <Box
       component="section"
@@ -53,7 +52,7 @@ function ProductHowItWorks() {
           }}
         />
         <Typography variant="h4"  component="h2" sx={{ mb: 14, color: 'white' }}>
-          How it works
+          Request A Quote
         </Typography>
 
         <div>
@@ -68,8 +67,9 @@ function ProductHowItWorks() {
                   sx={image}
                 />
                 <Typography variant="h5" align="center" color='white'>
-                  Appointment every Wednesday 9am.
+                  Request a quote
                 </Typography>
+
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -82,8 +82,7 @@ function ProductHowItWorks() {
                   sx={image}
                 />
                 <Typography variant="h5" align="center" color='white'>
-                  First come, first served. Our offers are in limited quantities, so
-                  be quick.
+                  We will present different options to you whithin 24 - 48 hours.
                 </Typography>
               </Box>
             </Grid>
@@ -97,8 +96,7 @@ function ProductHowItWorks() {
                   sx={image}
                 />
                 <Typography variant="h5" align="center" color='white'>
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+                  Review options and book your trip.
                 </Typography>
               </Box>
             </Grid>
@@ -110,11 +108,12 @@ function ProductHowItWorks() {
           size="large"
           variant="contained"
           component="a"
-          href="/premium-themes/onepirate/sign-up/"
+          href="/form"
           sx={{ mt: 8 }}
         >
           Get started
         </Button>
+        
       </Container>
     </Box>
   );

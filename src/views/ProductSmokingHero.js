@@ -24,7 +24,7 @@ function ProductSmokingHero() {
         </Typography>
       </Button>
       <Typography variant="subtitle1" sx={{ my: 3 }}>
-        We are here to help. Get in touch!
+        Send us an email at yulietseda@clear-destinations.com
       </Typography>
       <Box
         component="img"
@@ -37,3 +37,10 @@ function ProductSmokingHero() {
 }
 
 export default ProductSmokingHero;
+
+// Welcome to our travel agency, where we specialize in curating enriching educational and cultural experiences, 
+// organizing seamless group travel adventures, and providing luxurious resort accommodations. With a passion 
+// for exploration and a commitment to excellence, we strive to create unforgettable journeys that broaden 
+// horizons and create lasting memories. Whether you're seeking an immersive cultural adventure, a thrilling 
+// group excursion, or a relaxing resort getaway, our team is dedicated to crafting tailor-made experiences that 
+// exceed expectations and leave a lasting impact. 

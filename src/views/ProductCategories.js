@@ -55,12 +55,12 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 const images = [
   {
     url: 'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400',
-    title: 'Snorkeling',
+    title: 'All Inclusive Resorts',
     width: '40%',
   },
   {
     url: 'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400',
-    title: 'Massage',
+    title: 'Spa',
     width: '20%',
   },
   {
@@ -70,32 +70,32 @@ const images = [
   },
   {
     url: 'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400',
-    title: 'Tour',
+    title: 'Tours',
     width: '38%',
   },
   {
     url: 'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400',
-    title: 'Gastronomy',
+    title: 'Cruises',
     width: '38%',
   },
   {
     url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400',
-    title: 'Shopping',
+    title: 'Family Reunions',
     width: '24%',
   },
   {
     url: 'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400',
-    title: 'Walking',
+    title: 'Weddings',
     width: '40%',
   },
   {
     url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400',
-    title: 'Fitness',
+    title: 'Corporate Retreats',
     width: '20%',
   },
   {
     url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400',
-    title: 'Reading',
+    title: 'Educational Experiences',
     width: '40%',
   },
 ];
@@ -107,7 +107,7 @@ export default function ProductCategories() {
     <Container component="section" sx={{ mt: 8, mb: 4 }}>
 
       <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
+        For all tastes and all desires ??
       </Typography>
 
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
