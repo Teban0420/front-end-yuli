@@ -8,6 +8,7 @@ const rightLink = {
   fontSize: 16,
   color: 'common.white',
   ml: 3,
+  
 };
 
 function AppAppBar() {
@@ -16,9 +17,20 @@ function AppAppBar() {
     <div >
       <AppBar position="fixed">
 
-        <Toolbar sx={{ justifyContent: 'space-between', bgcolor: '#1b3c6b'  }}>
+        <Toolbar sx={{ justifyContent: 'space-between', bgcolor: '#1b3c6b' }}>
           
-          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end'}}>
+
+            <Link
+                color="inherit"
+                variant="h6"
+                underline="none"
+                href="/"
+                sx={{rightLink}}
+                style={{marginLeft: 20}}             
+            >
+              About Us
+            </Link>           
 
             <Link
               color="inherit"
@@ -26,11 +38,13 @@ function AppAppBar() {
               underline="none"
               href="/login"
               sx={{rightLink}}
+              style={{marginLeft: 20}}
             >
-              {'Sign In'}
-            </Link>
+              Sign In
+            </Link>            
             
           </Box>
+
         </Toolbar>
       </AppBar>
       <Toolbar />

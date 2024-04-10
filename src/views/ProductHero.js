@@ -1,3 +1,4 @@
+import Button from '../components/Button';
 import ProductHeroLayout from './ProductHeroLayout';
 import clear_destinations from '../img/clear_destinations.jpg'
 

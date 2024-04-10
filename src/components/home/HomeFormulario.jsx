@@ -4,6 +4,7 @@ import Link from '@mui/material/Link';
 import AppBar from '../AppBar';
 import Toolbar from '../Toolbar';
 import clear_destinations from '../../img/clear_destinations.jpg'
+import AppFooter from '../../views/AppFooter';
 
 
 export const HomeFormulario = () => {
@@ -31,7 +32,7 @@ export const HomeFormulario = () => {
             </Toolbar>
         </AppBar>
         
-        <figure className="container-sm text-center parrafo">
+        <figure className="container text-center ">
 
             <blockquote className="blockquote">
                 <strong>YOU DESERVE A VACATION We are here to satisfy all of your travel needs </strong>
@@ -67,6 +68,8 @@ export const HomeFormulario = () => {
                     </div>
                 </div>
             </div>
+            <br />
+            <AppFooter />
         </>
     )
 }

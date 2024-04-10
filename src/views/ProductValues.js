@@ -1,9 +1,11 @@
-import * as React from 'react';
-
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import RoomServiceIcon from '@mui/icons-material/RoomService';
+import CachedIcon from '@mui/icons-material/Cached';
+import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+
 
 const item = {
   display: 'flex',
@@ -13,6 +15,7 @@ const item = {
 };
 
 function ProductValues() {
+
   return (
     <Box
       component="section"
@@ -28,12 +31,12 @@ function ProductValues() {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
+
+              <Box                
                 sx={{ height: 55 }}
               />
+
+              <RoomServiceIcon fontSize="large" />
 
               <Typography variant="h6" sx={{ my: 5 }}>
                 The best luxury hotels
@@ -54,12 +57,11 @@ function ProductValues() {
           <Grid item xs={12} md={4}>
             <Box sx={item}>
 
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
+              <Box                
                 sx={{ height: 55 }}
               />
+
+              <CachedIcon fontSize="large"/>
 
               <Typography variant="h6" sx={{ my: 5 }}>
                 New experiences
@@ -79,12 +81,11 @@ function ProductValues() {
           <Grid item xs={12} md={4}>
 
             <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
+              <Box                
                 sx={{ height: 55 }}
               />
+
+              <ProductionQuantityLimitsIcon fontSize='large'/>
 
               <Typography variant="h6" sx={{ my: 5 }}>
                 Exclusive rates
@@ -97,7 +98,9 @@ function ProductValues() {
               
             </Box>
           </Grid>
+
         </Grid>
+        
       </Container>
     </Box>
   );

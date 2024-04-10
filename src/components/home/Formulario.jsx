@@ -131,7 +131,7 @@ export const Formulario = () => {
                 </select>
 
                 <div className="mb-3 ">
-                    <label className={ (!reserve.email.length) ? 'form-label top text-danger' : 'form-label' }>
+                    <label className={ (!reserve.email.length) ? 'form-label top text-danger' : 'form-label top' }>
                         Email *
                     </label>
                     <input type="text" className="form-control" name="email" required  onChange={leerdatos}
@@ -154,14 +154,14 @@ export const Formulario = () => {
                 </select>  
 
                 <div className="mb-3 ">
-                    <label className={ (!reserve.first_name.length) ? 'form-label top text-danger' : 'form-label' }>
+                    <label className={ (!reserve.first_name.length) ? 'form-label top text-danger' : 'form-label top' }>
                         First Name *
                     </label>
                     <input type="text" className="form-control" name="first_name" required  onChange={leerdatos}/>
                 </div> 
 
                 <div className="mb-3 ">
-                    <label className={ (!reserve.first_name.length) ? 'form-label text-danger' : 'form-label' }>
+                    <label className={ (!reserve.first_name.length) ? 'form-label text-danger' : 'form-label top' }>
                         Last Name *
                     </label>
                     <input type="text" className="form-control" name="last_name" required  onChange={leerdatos}/>
@@ -307,7 +307,7 @@ export const Formulario = () => {
                 </div> 
 
                 <div className="mb-3 ">
-                    <label className={ (!reserve.desired_person_bucket.length) ? 'form-label text-danger' : 'form-label' }>
+                    <label className={ (!reserve.desired_person_bucket.length) ? 'form-label text-danger top' : 'form-label top' }>
                         Desired per person budget is USD $.
                     </label>
                     <input type="text" className="form-control" name="desired_person_bucket" required  onChange={leerdatos}/>

@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import XIcon from '@mui/icons-material/X';
 
 function Copyright() {
 
@@ -46,7 +46,7 @@ const LANGUAGES = [
   },
 ];
 
-export default function AppFooter() {
+export default function AppFooter() { 
 
   return (
 
@@ -63,7 +63,7 @@ export default function AppFooter() {
               direction="column"
               justifyContent="flex-end"
               spacing={3}
-              sx={{ height: 100 }}
+              sx={{ height: 80 }}
             >
               <Grid item sx={{ display: 'flex' }}>
 
@@ -75,6 +75,10 @@ export default function AppFooter() {
                   <InstagramIcon />
                 </Box>
 
+                <Box component="a" href="" sx={iconStyle}>
+                  <XIcon />
+                </Box>
+
               </Grid>                         
             </Grid>          
           </Grid>  
@@ -84,7 +88,7 @@ export default function AppFooter() {
             </Grid>       */}
          
         </Grid>
-         <Grid item xs={6} sm={4} md={2} style={{ marginLeft: '40%'}}>
+         <Grid item xs={6} sm={4} md={2} style={{ marginLeft: '20%'}}>
 
               <Typography variant="h6" marked="left" gutterBottom >
                 Legal

@@ -37,12 +37,6 @@ export const Home = () => {
                     </div>
                 </nav>
             </header>   
-
-           
-
-            
-            
-           
         </>
     )
 }

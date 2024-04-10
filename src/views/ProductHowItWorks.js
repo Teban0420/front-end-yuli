@@ -3,6 +3,9 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
+import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
+import SmsIcon from '@mui/icons-material/Sms';
+import CardTravelIcon from '@mui/icons-material/CardTravel';
 
 const item = {
   display: 'flex',
@@ -13,14 +16,13 @@ const item = {
 
 const number = {
   fontSize: 24,
-  fontFamily: 'default',
-  color: 'secondary.main',
+  color: '#FFF',
   fontWeight: 'medium',
 };
 
 const image = {
-  height: 55,
-  my: 4,
+  height: 35,
+  my: 2,
 };
 
 function ProductHowItWorks() {
@@ -59,46 +61,35 @@ function ProductHowItWorks() {
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
-                <Box sx={number}>1.</Box>
-                <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks1.svg"
-                  alt="suitcase"
-                  sx={image}
-                />
-                <Typography variant="h5" align="center" color='white'>
-                  Request a quote
-                </Typography>
+                <Box sx={number}><RequestQuoteIcon fontSize='large'/> </Box>
 
+                <Box sx={image} />
+               
+                  <Typography variant="h5" align="center" color='white'>
+                    Request a quote
+                  </Typography>
               </Box>
+
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
-                <Box sx={number}>2.</Box>
-                <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks2.svg"
-                  alt="graph"
-                  sx={image}
-                />
-                <Typography variant="h5" align="center" color='white'>
-                  We will present different options to you whithin 24 - 48 hours.
-                </Typography>
-              </Box>
+                <Box sx={number}><SmsIcon  fontSize='large'/></Box>
+                <Box sx={image} />
+                  <Typography variant="h5" align="center" color='white'>
+                    We will present different options to you whithin 24 - 48 hours.
+                  </Typography>
+                </Box>
             </Grid>
             <Grid item xs={12} md={4}>
+
               <Box sx={item}>
-                <Box sx={number}>3.</Box>
-                <Box
-                  component="img"
-                  src="/static/themes/onepirate/productHowItWorks3.svg"
-                  alt="clock"
-                  sx={image}
-                />
-                <Typography variant="h5" align="center" color='white'>
-                  Review options and book your trip.
-                </Typography>
+                <Box sx={number}><CardTravelIcon fontSize='large' /></Box>
+                <Box sx={image} />
+                  <Typography variant="h5" align="center" color='white'>
+                    Review options and book your trip.
+                  </Typography>
               </Box>
+              
             </Grid>
           </Grid>
         </div>

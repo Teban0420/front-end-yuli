@@ -1,8 +1,8 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+
 
 function ProductSmokingHero() {
   return (
@@ -22,16 +22,13 @@ function ProductSmokingHero() {
         <Typography variant="h4" component="span">
           Got any questions? Need help?
         </Typography>
+
       </Button>
-      <Typography variant="subtitle1" sx={{ my: 3 }}>
-        Send us an email at yulietseda@clear-destinations.com
-      </Typography>
-      <Box
-        component="img"
-        src="/static/themes/onepirate/productBuoy.svg"
-        alt="buoy"
-        sx={{ width: 60 }}
-      />
+
+        <Typography variant="subtitle1" sx={{ my: 3 }}>
+          Send us an email at yulietseda@clear-destinations.com
+        </Typography>
+     
     </Container>
   );
 }

@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import cruice from '../img/Cruice.png';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -74,7 +75,7 @@ const images = [
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400',
+    url: 'https://www.canva.com/design/DAGB-qU4xDQ/UZeqc15hQdQE7FPMvW8cQA/view?utm_content=DAGB-qU4xDQ&utm_campaign=designshare&utm_medium=link&utm_source=viewer',
     title: 'Cruises',
     width: '38%',
   },
