@@ -3,7 +3,8 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
-import cruice from '../img/Cruice.png';
+
+
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -75,12 +76,12 @@ const images = [
     width: '38%',
   },
   {
-    url: 'https://www.canva.com/design/DAGB-qU4xDQ/UZeqc15hQdQE7FPMvW8cQA/view?utm_content=DAGB-qU4xDQ&utm_campaign=designshare&utm_medium=link&utm_source=viewer',
+    url: require('../img/cruice.jpg'),
     title: 'Cruises',
     width: '38%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400',
+    url: require('../img/family.jpg'),
     title: 'Family Reunions',
     width: '24%',
   },
@@ -90,12 +91,12 @@ const images = [
     width: '40%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400',
+    url:  require('../img/eventos.jpg'),
     title: 'Corporate Retreats',
     width: '20%',
   },
   {
-    url: 'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400',
+    url: require('../img/museum.jpg'),
     title: 'Educational Experiences',
     width: '40%',
   },
@@ -103,9 +104,10 @@ const images = [
 
 export default function ProductCategories() {
   
+
   return (
 
-    <Container component="section" sx={{ mt: 8, mb: 4 }}>
+    <Container component="section" sx={{ mt: 8, mb: 4 }}>      
 
       <Typography variant="h4" marked="center" align="center" component="h2">
         For all tastes and all desires ??
@@ -114,11 +116,13 @@ export default function ProductCategories() {
       <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
         
         {images.map((image) => (
+
           <ImageIconButton
-            key={image.title}
-            style={{
-              width: image.width,
-            }}
+              key={image.title}
+              style={{
+                width: image.width,
+              }}
+              
           >
             <Box
               sx={{
