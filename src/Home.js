@@ -7,6 +7,8 @@ import ProductHowItWorks from './views/ProductHowItWorks';
 import ProductCTA from './views/ProductCTA';
 import AppAppBar from './views/AppAppBar';
 import {withRoot} from './withRoot';
+import Testimonials from './views/Testimonials';
+import AboutUs from './views/AboutUs';
 
  export const Home = () => {
   return (
@@ -16,7 +18,9 @@ import {withRoot} from './withRoot';
       <ProductValues />
       <ProductCategories />
       <ProductHowItWorks />
+      <AboutUs />
       <ProductCTA />
+      <Testimonials />
       <ProductSmokingHero />
       <AppFooter />
     </>

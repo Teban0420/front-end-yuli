@@ -8,38 +8,38 @@ function ProductCTA() {
  
   const handleSubmit = (event) => {
     event.preventDefault();
-     console.log('enviando')
-    
+     console.log('enviando')    
   };
 
   return (
-    <Container component="section" sx={{ mt: 10, display: 'flex' }}>
-      <Grid container>
+    <Container component="section" sx={{ mt: 10, display: 'flex' }} >
+      <Grid container >
         <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
           <Box
             sx={{
               display: 'flex',
-              justifyContent: 'center',
-              bgcolor: 'warning.main',
+              justifyContent: 'center',              
               py: 8,
               px: 3,
             }}
+            style={{backgroundColor: '#465c78'}}
           >
-            <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }}>
+            <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 400 }} >
               
-              <Typography variant="h2" component="h2" gutterBottom>
+              <Typography variant="h2" component="h2" gutterBottom style={{color: 'white'}}>
                 Current Offers
               </Typography>
 
-              <Typography variant="h5" >
+              <Typography variant="h5" style={{color: 'white'}}>
                 Taste the holidays of the everyday close to home.
-              </Typography>
+              </Typography>              
              
               <Button
                 type="submit"
                 color="primary"
                 variant="contained"
                 sx={{ width: '100%' }}
+                style={{marginTop: 3}}
               >
                 Keep me updated
               </Button>

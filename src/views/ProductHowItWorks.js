@@ -99,7 +99,7 @@ function ProductHowItWorks() {
           size="large"
           variant="contained"
           component="a"
-          href="/form"
+          href="/form" 
           sx={{ mt: 8 }}
         >
           Get started
