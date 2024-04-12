@@ -45,7 +45,7 @@ const AboutUs = () => {
                 </Card>
 
                 <Link 
-                    href='https://api.whatsapp.com/send?phone=15618460717'
+                    href='https://api.whatsapp.com/send?phone=17728825552'
                     sx={{ mt: 8 }}
                 > 
 

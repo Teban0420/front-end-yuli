@@ -15,7 +15,7 @@ const item = {
 };
 
 const number = {
-  fontSize: 24,
+  fontSize: 55,
   color: '#FFF',
   fontWeight: 'medium',
 };
@@ -61,7 +61,7 @@ function ProductHowItWorks() {
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
-                <Box sx={number}><RequestQuoteIcon fontSize='large'/> </Box>
+                <Box sx={number}><RequestQuoteIcon fontSize='string'/> </Box>
 
                 <Box sx={image} />
                
@@ -71,10 +71,12 @@ function ProductHowItWorks() {
               </Box>
 
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={4} >
               <Box sx={item}>
-                <Box sx={number}><SmsIcon  fontSize='large'/></Box>
+                <Box sx={number} ><SmsIcon  fontSize='string'/></Box>
+
                 <Box sx={image} />
+                  
                   <Typography variant="h5" align="center" color='white'>
                     We will present different options to you whithin 24 - 48 hours.
                   </Typography>
@@ -83,7 +85,8 @@ function ProductHowItWorks() {
             <Grid item xs={12} md={4}>
 
               <Box sx={item}>
-                <Box sx={number}><CardTravelIcon fontSize='large' /></Box>
+                <Box sx={number}><CardTravelIcon fontSize='string' /></Box>
+                
                 <Box sx={image} />
                   <Typography variant="h5" align="center" color='white'>
                     Review options and book your trip.

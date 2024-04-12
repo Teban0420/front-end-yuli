@@ -1,6 +1,6 @@
 {
-  "short_name": "CleanWater",
-  "name": "CleanWater",
+  "short_name": "Clear-Destinations",
+  "name": "Clear-Destinations",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://floridacleanwater.org/",
+  "start_url": "https://clear-destinations.com/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

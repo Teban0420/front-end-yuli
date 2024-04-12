@@ -29,7 +29,7 @@ function AppAppBar() {
                 sx={{rightLink}}
                 style={{marginLeft: 20}}             
             >
-              About Us
+              Agent
             </Link>           
 
             <Link

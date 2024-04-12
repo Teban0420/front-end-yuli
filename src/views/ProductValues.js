@@ -36,7 +36,7 @@ function ProductValues() {
                 sx={{ height: 55 }}
               />
 
-              <RoomServiceIcon fontSize="large" />
+              <RoomServiceIcon sx={{fontSize: 55}} fontSize="string" />
 
               <Typography variant="h6" sx={{ my: 5 }}>
                 The best luxury hotels
@@ -61,7 +61,7 @@ function ProductValues() {
                 sx={{ height: 55 }}
               />
 
-              <CachedIcon fontSize="large"/>
+              <CachedIcon sx={{fontSize: 55}} fontSize="string" />
 
               <Typography variant="h6" sx={{ my: 5 }}>
                 New experiences
@@ -85,16 +85,16 @@ function ProductValues() {
                 sx={{ height: 55 }}
               />
 
-              <ProductionQuantityLimitsIcon fontSize='large'/>
+              <ProductionQuantityLimitsIcon sx={{fontSize: 55}} fontSize="string"/>
 
-              <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
-              </Typography>
+                <Typography variant="h6" sx={{ my: 5 }}>
+                  Exclusive rates
+                </Typography>
 
-              <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
-              </Typography>
+                <Typography variant="h5">
+                  {'By registering, you will access specially negotiated rates '}
+                  {'that you will not find anywhere else.'}
+                </Typography>
               
             </Box>
           </Grid>

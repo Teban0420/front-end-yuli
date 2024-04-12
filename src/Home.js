@@ -15,8 +15,8 @@ import AboutUs from './views/AboutUs';
     <>
       <AppAppBar />
       <ProductHero />
-      <ProductValues />
       <ProductCategories />
+      <ProductValues />
       <ProductHowItWorks />
       <AboutUs />
       <ProductCTA />

@@ -28,7 +28,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
     height: 100,
   },
   '&:hover': {
-    zIndex: 1,
+    zIndex: 1,    
   },
   '&:hover .imageBackdrop': {
     opacity: 0.15,
@@ -37,7 +37,11 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
     opacity: 0,
   },
   '&:hover .imageTitle': {
-    border: '4px solid currentColor',
+    border: '4px solid currentColor',      
+  },
+  '&:hover .texto': {
+     opacity: 1
+    
   },
   '& .imageTitle': {
     position: 'relative',
@@ -136,6 +140,7 @@ export default function ProductCategories() {
                 backgroundImage: `url(${image.url})`,
               }}
             />
+
             <ImageBackdrop className="imageBackdrop" />
             <Box
               sx={{
@@ -154,7 +159,7 @@ export default function ProductCategories() {
                 component="h3"
                 variant="h6"
                 color="inherit"
-                className="imageTitle"
+                className="imageTitle texto"                
               >
                 {image.title}
                 <div className="imageMarked" />

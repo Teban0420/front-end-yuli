@@ -6,6 +6,7 @@ import Typography from '../components/Typography';
 
 function ProductSmokingHero() {
   return (
+
     <Container
       component="section"
       sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', my: 9 }}
@@ -19,15 +20,20 @@ function ProductSmokingHero() {
           px: 5,
         }}
       >
-        <Typography variant="h4" component="span">
-          Got any questions? Need help?
+        <Typography variant="h5" component="span">
+          Got any questions? Need help during your trip?
         </Typography>
 
       </Button>
 
         <Typography variant="subtitle1" sx={{ my: 3 }}>
+          We are here to support you before and while on your trip in case of delays or cancellations
+        </Typography>
+        
+        <Typography variant="subtitle2" sx={{ my: 3, fontSize: 16 }}>
           Send us an email at yulietseda@clear-destinations.com
         </Typography>
+
      
     </Container>
   );
