@@ -1,36 +1,13 @@
 import { Formulario } from './Formulario';
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import AppBar from '../AppBar';
-import Toolbar from '../Toolbar';
-import clear_destinations from '../../img/clear_destinations.jpg'
 import AppFooter from '../../views/AppFooter';
+import AppAppBar from '../../views/AppAppBar';
 
 
 export const HomeFormulario = () => {
 
     return(
-        <>
-
-        <AppBar position="fixed">
-
-            <Toolbar sx={{ justifyContent: 'space-between', bgcolor: '#1b3c6b'  }}>
-                
-                 <Box sx={{ flex: 1 }} >
-
-                    <Link
-                    variant="h6"
-                    underline="none"
-                    color="inherit"
-                    href="/"
-                    sx={{ fontSize: 24,  }}
-                    >
-                        <img src={clear_destinations} className='logo' alt="Clear Destinations" />
-                    </Link>
-
-                </Box>            
-            </Toolbar>
-        </AppBar>
+        <>        
+        <AppAppBar logo={true} />        
         
         <figure className="container text-center ">
 
@@ -69,7 +46,7 @@ export const HomeFormulario = () => {
                 </div>
             </div>
             <br />
-            <AppFooter />
+        <AppFooter />
         </>
     )
 }

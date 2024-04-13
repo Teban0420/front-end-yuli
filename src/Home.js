@@ -13,7 +13,7 @@ import AboutUs from './views/AboutUs';
  export const Home = () => {
   return (
     <>
-      <AppAppBar />
+      <AppAppBar sign_in={true} />
       <ProductHero />
       <ProductCategories />
       <ProductValues />

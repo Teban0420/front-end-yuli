@@ -1,14 +1,19 @@
+import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import Button from '../components/Button';
 
+
 function ProductCTA() {   
+
+  const navigate = useNavigate();
  
   const handleSubmit = (event) => {
     event.preventDefault();
-     console.log('enviando')    
+     
+    navigate('/offers');
   };
 
   return (
@@ -40,6 +45,7 @@ function ProductCTA() {
                 variant="contained"
                 sx={{ width: '100%' }}
                 style={{marginTop: 3}}
+               
               >
                 Keep me updated
               </Button>

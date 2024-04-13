@@ -12,10 +12,11 @@ const AboutUs = () => {
       <Grid container spacing={3}>        
             <Grid item xs={12} md={6} style={{marginTop: 20}}>
                 <Card>
+
                     <CardMedia
                         component="img"
-                        image="https://via.placeholder.com/400x300" // URL de la imagen, reemplaza con tu propia URL
-                        alt="Foto del equipo"
+                        image={require('../img/agent.jpg')} // URL de la imagen, reemplaza con tu propia URL
+                        alt="Yuliet Seda"
                     />
                 </Card>
             </Grid>

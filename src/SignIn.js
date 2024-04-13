@@ -1,19 +1,24 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import { Field, Form, FormSpy } from 'react-final-form';
 import Box from '@mui/material/Box';
+import Typography from './components/Typography';
+import AppFooter from './views/AppFooter';
+import AppAppBar from './views/AppAppBar';
+import AppForm from './views/AppForm';
+import { email, required } from './form/validation';
+import RFTextField from './form/RFTextField';
+import FormButton from './form/FormButton';
+import FormFeedback from './form/FormFeedback';
 import Link from '@mui/material/Link';
-import Typography from './modules/components/Typography';
-import AppFooter from './modules/views/AppFooter';
-import AppAppBar from './modules/views/AppAppBar';
-import AppForm from './modules/views/AppForm';
-import { email, required } from './modules/form/validation';
-import RFTextField from './modules/form/RFTextField';
-import FormButton from './modules/form/FormButton';
-import FormFeedback from './modules/form/FormFeedback';
-import withRoot from './modules/withRoot';
+
 
 function SignIn() {
-  const [sent, setSent] = React.useState(false);
+  const [sent, setSent] = useState(false);
+
+  const [ credenciales, setCredenciales ] = useState({
+    email: '',
+    password: ''
+  })
 
   const validate = (values) => {
     const errors = required(['email', 'password'], values);
@@ -29,35 +34,29 @@ function SignIn() {
   };
 
   const handleSubmit = () => {
+   
     setSent(true);
-  };
+  }; 
 
   return (
-    <React.Fragment>
-      <AppAppBar />
-      <AppForm>
-        <React.Fragment>
-          <Typography variant="h3" gutterBottom marked="center" align="center">
+    <>
+      <AppAppBar logo={true}/>        
+      
+        <AppForm >
+        
+          <Typography variant="h3"  align="center" >
             Sign In
-          </Typography>
-          <Typography variant="body2" align="center">
-            {'Not a member yet? '}
-            <Link
-              href="/premium-themes/onepirate/sign-up/"
-              align="center"
-              underline="always"
-            >
-              Sign Up here
-            </Link>
-          </Typography>
-        </React.Fragment>
-        <Form
-          onSubmit={handleSubmit}
-          subscription={{ submitting: true }}
-          validate={validate}
-        >
+          </Typography>          
+        
+          <Form
+            onSubmit={handleSubmit}
+            subscription={{ submitting: true }}
+            validate={validate}
+          >
+
           {({ handleSubmit: handleSubmit2, submitting }) => (
             <Box component="form" onSubmit={handleSubmit2} noValidate sx={{ mt: 6 }}>
+
               <Field
                 autoComplete="email"
                 autoFocus
@@ -69,9 +68,10 @@ function SignIn() {
                 name="email"
                 required
                 size="large"
+                value={credenciales.email}
               />
               <Field
-                fullWidth
+                fullWidth 
                 size="large"
                 component={RFTextField}
                 disabled={submitting || sent}
@@ -91,27 +91,37 @@ function SignIn() {
                   ) : null
                 }
               </FormSpy>
+
               <FormButton
                 sx={{ mt: 3, mb: 2 }}
                 disabled={submitting || sent}
                 size="large"
-                color="secondary"
+               
                 fullWidth
               >
                 {submitting || sent ? 'In progress…' : 'Sign In'}
               </FormButton>
+
+                <Typography variant="body2" align="center">
+                
+                  <Link
+                    href="/"
+                    align="center"
+                    underline="always"
+                  >
+                  Home
+                </Link>
+              </Typography>
+
             </Box>
           )}
+
         </Form>
-        <Typography align="center">
-          <Link underline="always" href="/premium-themes/onepirate/forgot-password/">
-            Forgot password?
-          </Link>
-        </Typography>
+       
       </AppForm>
       <AppFooter />
-    </React.Fragment>
+    </>
   );
 }
 
-export default withRoot(SignIn);
+export default SignIn;

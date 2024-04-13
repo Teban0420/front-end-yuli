@@ -17,7 +17,7 @@ function Copyright() {
       Copyright {' '}
       {'© '}
 
-      <Link color="inherit">
+      <Link color="inherit" href="/">
         Clear-Destinations
       </Link>{' '}
 
@@ -49,7 +49,7 @@ const iconStyle = {
 //     name: 'Français',
 //   },
 // ];
-
+ 
 export default function AppFooter() { 
 
   return (
