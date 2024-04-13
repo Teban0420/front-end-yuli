@@ -6,15 +6,19 @@ import Typography from '../components/Typography';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
+import Terms from './Terms';
+import Privacy from './Privacy';
 
 function Copyright() {
 
   return (
     <>
+
+      Copyright {' '}
       {'© '}
 
       <Link color="inherit">
-        Clear Destinations
+        Clear-Destinations
       </Link>{' '}
 
       {new Date().getFullYear()}
@@ -31,20 +35,20 @@ const iconStyle = {
   backgroundColor: 'white',
   mr: 1,
   '&:hover': {
-    bgcolor: 'warning.dark',
+    bgcolor: 'warning.ligth',
   },
 };
 
-const LANGUAGES = [
-  {
-    code: 'en-US',
-    name: 'English',
-  },
-  {
-    code: 'fr-FR',
-    name: 'Français',
-  },
-];
+// const LANGUAGES = [
+//   {
+//     code: 'en-US',
+//     name: 'English',
+//   },
+//   {
+//     code: 'fr-FR',
+//     name: 'Français',
+//   },
+// ];
 
 export default function AppFooter() { 
 
@@ -80,14 +84,16 @@ export default function AppFooter() {
                 </Box>
 
               </Grid>                         
-            </Grid>          
-          </Grid>  
+            </Grid>   
 
-            {/* <Grid item style={{ marginLeft: '15%', paddingTop: 70 }}>
-              <Copyright />
-            </Grid>       */}
-         
+
+          </Grid>  
+      
+              <Grid item  style={{ paddingTop: 40,  width: '80%' }}>
+                <Copyright />
+              </Grid>   
         </Grid>
+
          <Grid item xs={6} sm={4} md={2} style={{ marginLeft: '20%'}}>
 
               <Typography variant="h6" marked="left" gutterBottom >
@@ -96,16 +102,17 @@ export default function AppFooter() {
 
               <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
           
-                <Box component="li" sx={{ py: 0.5}}>
-                  <Link href="/premium-themes/onepirate/terms/" style={{color: 'white'}}>Terms</Link>
+                <Box component="li" sx={{ py: 0}} >
+                  <Terms />
+                </Box>                
+
+                <Box component="li" sx={{ py: 0 }}>
+                  <Privacy />
                 </Box>
 
-                <Box component="li" sx={{ py: 0.5 }}>
-                  <Link href="/premium-themes/onepirate/privacy/" style={{color: 'white'}}>Privacy</Link>
-                </Box>
               </Box>
 
-            </Grid> 
+        </Grid> 
       </Container>  
     </Typography>
   );
