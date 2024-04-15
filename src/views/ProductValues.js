@@ -39,17 +39,14 @@ function ProductValues() {
               <RoomServiceIcon sx={{fontSize: 55}} fontSize="string" />
 
               <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
+                Welcome 
               </Typography>
 
               <Typography variant="h5">
-                {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
+               
+                We specialize in curating enriching educational and cultural experiences, organizing seamless group travel adventures, and providing luxurious resort accommodations.
+              
 
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
-                }
               </Typography>
             </Box>
           </Grid>
@@ -68,11 +65,10 @@ function ProductValues() {
               </Typography>
 
               <Typography variant="h5">
-                {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
-                }
+                
+                With a passion for exploration and a commitment to excellence, we strive to create unforgettable 
+                journeys that broaden horizons and create lasting memories.                
 
-                {'your Sundays will not be alike.'}
               </Typography>
 
             </Box>
@@ -88,12 +84,11 @@ function ProductValues() {
               <ProductionQuantityLimitsIcon sx={{fontSize: 55}} fontSize="string"/>
 
                 <Typography variant="h6" sx={{ my: 5 }}>
-                  Exclusive rates
+                  Join Us
                 </Typography>
 
                 <Typography variant="h5">
-                  {'By registering, you will access specially negotiated rates '}
-                  {'that you will not find anywhere else.'}
+                On a journey of discovery and adventure
                 </Typography>
               
             </Box>

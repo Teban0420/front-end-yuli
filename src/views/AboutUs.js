@@ -22,6 +22,7 @@ const AboutUs = () => {
             </Grid>
 
             <Grid item xs={12} md={6} style={{marginTop: 20}}>
+                
                 <Card >
                     <CardContent>
                         <Typography variant="h5" gutterBottom>
@@ -29,20 +30,15 @@ const AboutUs = () => {
                         </Typography>
 
                         <Typography variant="body1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-                            dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. 
+                            Hi! My name is Yuliet and I'm originally from Colombia, I moved to the U.S. 
+                            in 2007 and began a 15 year career in healthcare. I  became a travel advisor, 
+                            driven by my passion for creating lasting memories. With a love for exploration and 
+                            cultural insights, I craft personalized journeys, igniting the spark of wanderlust 
+                            in others and sharing the magic of travel with the world.
                         </Typography>
                     </CardContent>
                     <br/>
 
-                    <CardContent>                      
-
-                        <Typography variant="body1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-                            dapibus diam. Sed nisi. 
-                        </Typography>
-
-                    </CardContent>
                 </Card>
 
                 <Link 

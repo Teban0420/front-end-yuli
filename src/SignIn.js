@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Field, Form, FormSpy } from 'react-final-form';
 import Box from '@mui/material/Box';
 import Typography from './components/Typography';
@@ -9,16 +10,20 @@ import { email, required } from './form/validation';
 import RFTextField from './form/RFTextField';
 import FormButton from './form/FormButton';
 import FormFeedback from './form/FormFeedback';
+import Alert from '@mui/material/Alert';
 import Link from '@mui/material/Link';
+import adminAxios from './config/axios';
+import { Stack } from '@mui/material';
+import { ApiContext } from './context/apiContext';
 
 
 function SignIn() {
+
+  const [ auth, setAuth ] = useContext(ApiContext);
   const [sent, setSent] = useState(false);
 
-  const [ credenciales, setCredenciales ] = useState({
-    email: '',
-    password: ''
-  })
+  const [error, setError] = useState('');  
+  const navigate = useNavigate(); 
 
   const validate = (values) => {
     const errors = required(['email', 'password'], values);
@@ -33,9 +38,38 @@ function SignIn() {
     return errors;
   };
 
-  const handleSubmit = () => {
+  const alert = (msg) => {
+
+    return (
+      <Stack sx={{ width: '100%' }} spacing={2}>
+        <Alert severity="error">{msg}</Alert>
+      </Stack>
+    );
+
+  }
+
+  const handleSubmit =  async(e) => {
    
     setSent(true);
+
+    try {
+
+      const respuesta = await adminAxios.post('/login', e);
+      const { token } = respuesta.data;
+      localStorage.setItem('token', token);
+      
+      setAuth({
+        token: token,
+        auth: true
+      });
+
+      navigate('/admin');
+      
+    } catch (error) {        
+      setError(error.response.data.msg);   
+      setSent(false);   
+    }
+    
   }; 
 
   return (
@@ -46,8 +80,14 @@ function SignIn() {
         
           <Typography variant="h3"  align="center" >
             Sign In
-          </Typography>          
-        
+          </Typography>   
+
+          <br />
+
+          {
+            (error !== '') &&  alert(error)                   
+          }      
+                 
           <Form
             onSubmit={handleSubmit}
             subscription={{ submitting: true }}
@@ -68,8 +108,9 @@ function SignIn() {
                 name="email"
                 required
                 size="large"
-                value={credenciales.email}
+               
               />
+
               <Field
                 fullWidth 
                 size="large"
@@ -80,8 +121,9 @@ function SignIn() {
                 autoComplete="current-password"
                 label="Password"
                 type="password"
-                margin="normal"
+                margin="normal"                
               />
+
               <FormSpy subscription={{ submitError: true }}>
                 {({ submitError }) =>
                   submitError ? (
