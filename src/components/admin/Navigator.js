@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -9,9 +10,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
-import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
 import PermMediaOutlinedIcon from '@mui/icons-material/PhotoSizeSelectActual';
-
 
 
 const categories = [
@@ -23,9 +22,12 @@ const categories = [
         icon: <PeopleIcon />,
         active: true,
       },
-      { id: 'Database', icon: <DnsRoundedIcon /> },
-      { id: 'Storage', icon: <PermMediaOutlinedIcon /> },
-          
+      { 
+        id: <Link to="/admin/new_offer">New Offer</Link>, 
+        icon: <PermMediaOutlinedIcon />,
+        // label: <Link to="/admin/new_offer"></Link>        
+      },
+      { id: 'Offers', icon: <PermMediaOutlinedIcon /> },          
     ],
   }
   
@@ -67,10 +69,12 @@ export default function Navigator(props) {
         </ListItem>
 
         {categories.map(({ id, children }) => (
+          
           <Box key={id} sx={{ bgcolor: '#101F33' }}>
             <ListItem sx={{ py: 2, px: 3 }}>
               <ListItemText sx={{ color: '#fff' }}>{id}</ListItemText>
             </ListItem>
+
             {children.map(({ id: childId, icon, active }) => (
               <ListItem disablePadding key={childId}>
                 <ListItemButton selected={active} sx={item}>

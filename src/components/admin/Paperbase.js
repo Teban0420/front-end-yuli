@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -8,6 +9,7 @@ import Link from '@mui/material/Link';
 import Navigator from './Navigator';
 import Content from './Content';
 import Header from './Header';
+import { NewOffer } from './NewOffer';
 
 function Copyright() {
 
@@ -206,6 +208,13 @@ export default function Paperbase() {
 
             <Box component="main" sx={{ flex: 1, py: 6, px: 4, bgcolor: '#eaeff1' }}>
               <Content />
+                
+                {/* <Routes>
+
+                  <Route path='/admin/new_offer' Component={NewOffer}/>
+                </Routes>
+
+              </Content> */}
             </Box>
           
             <Box component="footer" sx={{ p: 2, bgcolor: '#eaeff1' }}>

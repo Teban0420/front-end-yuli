@@ -5,6 +5,7 @@ import { HomeFormulario } from '../components/home/HomeFormulario';
 import { Offers } from '../views/Offers';
 import SignIn from '../SignIn';
 import { Admin } from '../components/admin/Admin';
+import { NewOffer } from '../components/admin/NewOffer';
 
 
 export const AppRouter = () => {
@@ -17,7 +18,8 @@ export const AppRouter = () => {
                     <Route  path='/form' element={<HomeFormulario/>}/>
                     <Route  path='/offers' element={<Offers/>}/>
                     <Route  path='/sign-in' element={<SignIn/>}/>
-                    <Route  path='/admin' element={<Admin/>}/>
+                    <Route  path='/admin/*' element={<Admin/>}/>
+                    {/* <Route  path='/admin/new_offer' element={<NewOffer/>}/> */}
                 </Routes>
             </ApiProvider>
         </>

@@ -40,7 +40,7 @@ export default function Privacy() {
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Modal title
+          PRIVACY
         </DialogTitle>
 
         <IconButton
@@ -59,20 +59,43 @@ export default function Privacy() {
         <DialogContent dividers>
 
           <Typography gutterBottom>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            At Clear Destinations, we are committed to protecting your privacy and ensuring the security of your 
+            personal information. We understand the importance of transparency when it comes to handling your data. 
+            Please read the following disclosure regarding the collection and use of your information:
           </Typography>
 
           <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            1. Information Collection: We may collect personal information from you when you request a quote or 
+            utilize our services. This information may include but is not limited to your name, contact details, 
+            travel preferences, and other relevant details necessary to provide you with the best possible travel 
+            options.
+            <br/>
+            2. Use of Information: Any information collected from you will be used solely for the purpose of creating
+            a travel quote, facilitating travel arrangements, and improving our services to better meet your needs. 
+            We do not sell, rent, or share your personal information with third parties for marketing purposes.
+            <br/>
+            3. Security Measures: We have implemented industry-standard security measures to safeguard your personal 
+            information against unauthorized access, disclosure, alteration, or destruction. Your data is stored 
+            securely and accessed only by authorized personnel who are bound by confidentiality obligations.
+            <br/>
+            4. Consent: By providing us with your personal information, you consent to the collection, use, and 
+            disclosure of that information as described in this disclosure.
+            <br/>
+            5. Third-Party Links: Our website may contain links to third-party websites or services. Please note 
+            that we are not responsible for the privacy practices or content of these third-party sites. 
+            We encourage you to review the privacy policies of any third-party sites you visit.
+            <br/>
+            6. Changes to this Disclosure: We reserve the right to update or modify this privacy disclosure at any 
+            time. Any changes will be effective immediately upon posting on our website. We encourage you to review 
+            this disclosure periodically for any updates.
+
           </Typography>
 
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+            If you have any questions or concerns about our privacy practices or this disclosure, please contact 
+            us at [contact information]. Thank you for choosing Clear Destinations Travel Agency. We appreciate 
+            the opportunity to assist you with your travel needs while prioritizing the security and privacy of 
+            your information.
           </Typography>
 
         </DialogContent>

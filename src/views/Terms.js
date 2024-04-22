@@ -40,7 +40,7 @@ export default function Terms() {
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Modal title
+          LEGAL
         </DialogTitle>
 
         <IconButton
@@ -59,20 +59,42 @@ export default function Terms() {
         <DialogContent dividers>
 
           <Typography gutterBottom>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            At Clear Destinations, we strive to provide accurate and up-to-date pricing information to our customers. 
+            However, it is important to note that prices quoted are subject to change and may not be guaranteed until 
+            the reservation is booked. Please review the following disclaimer regarding pricing:
           </Typography>
 
           <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            1. Pricing Information: The prices provided on our website or through our travel advisors, are based 
+            on current market rates, availability, and other factors at the time of inquiry. While we make every 
+            effort to ensure the accuracy of our pricing information, it may be subject to change without notice.
+            <br/>
+            2. Price Guarantees: Unless otherwise stated, prices quoted are not guaranteed until the reservation is 
+            confirmed and payment is processed. Factors such as currency fluctuations, changes in taxes or fees, 
+            and availability of promotional offers may affect the final price of your booking.
+            <br/>
+            3. Reservation Confirmation: To secure the quoted price and finalize your reservation, we recommend 
+            booking as soon as possible. Once your reservation is confirmed, the price is locked in and will not 
+            change, provided there are no modifications to your booking.
+            <br/>
+            4. Price Changes: In the event of a price increase or decrease after your reservation is confirmed, we 
+            will notify you of any changes and provide options to proceed with the booking or make adjustments as 
+            necessary.
+            <br/>
+            5. Additional Fees: Please be aware that additional fees or charges may apply to your booking, such as 
+            taxes, service fees, and surcharges. These fees will be clearly disclosed before you confirm your 
+            reservation.
+            <br/>
+            6. Terms and Conditions: By using our services and booking through [Travel Agency Name], you acknowledge 
+            and accept that prices are subject to change until the reservation is booked and confirmed.
+            <br/>
+            7. Contact Us: If you have any questions or concerns regarding pricing or reservations, please don't 
+            hesitate to contact our customer service team for assistance.
           </Typography>
 
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+            Thank you for choosing Clear Destinations Travel Agency. We appreciate the opportunity to assist you
+            with your travel arrangements while providing transparency and clarity regarding pricing.
           </Typography>
 
         </DialogContent>
