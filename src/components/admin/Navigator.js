@@ -23,11 +23,13 @@ const categories = [
         active: true,
       },
       { 
-        id: <Link to="/admin/new_offer">New Offer</Link>, 
-        icon: <PermMediaOutlinedIcon />,
-        // label: <Link to="/admin/new_offer"></Link>        
+        id: <Link to="/admin/offers/new">New Offer</Link>, 
+        icon: <PermMediaOutlinedIcon />,     
       },
-      { id: 'Offers', icon: <PermMediaOutlinedIcon /> },          
+      { 
+        id: <Link to="/admin/offers/all">Offers</Link>, 
+        icon: <PermMediaOutlinedIcon /> 
+      },          
     ],
   }
   

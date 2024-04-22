@@ -48,7 +48,7 @@ export default function Content() {
 
               <Button variant="contained" sx={{ mr: 1 }}>
                 Add user
-              </Button>
+              </Button> 
 
               <Tooltip title="Reload">
                 <IconButton>

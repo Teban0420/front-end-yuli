@@ -5,11 +5,16 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Navigator from './Navigator';
 import Content from './Content';
 import Header from './Header';
 import { NewOffer } from './NewOffer';
+import { Offers } from './Offers';
 
 function Copyright() {
 
@@ -207,14 +212,27 @@ export default function Paperbase() {
           <Header onDrawerToggle={handleDrawerToggle} />
 
             <Box component="main" sx={{ flex: 1, py: 6, px: 4, bgcolor: '#eaeff1' }}>
-              <Content />
-                
-                {/* <Routes>
+                <Paper sx={{ maxWidth: 936, margin: 'auto', overflow: 'hidden' }}>
+      
+                    <AppBar
+                      position="static"
+                      color="default"
+                      elevation={0}
+                      sx={{ borderBottom: '1px solid rgba(0, 0, 0, 0.12)' }}
+                    >
+                  <Toolbar>
+          
+                    <Grid container spacing={2} alignItems="center">
 
-                  <Route path='/admin/new_offer' Component={NewOffer}/>
-                </Routes>
+                      <Routes>
+                        <Route path='/offers/new' Component={NewOffer}/>
+                        <Route path='/offers/all' Component={Offers}/>
+                      </Routes>                  
 
-              </Content> */}
+                    </Grid>
+                  </Toolbar>
+               </AppBar> 
+               </Paper>
             </Box>
           
             <Box component="footer" sx={{ p: 2, bgcolor: '#eaeff1' }}>
